@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap'); 
+     
+     /* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* main styling */
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0a27;
+    color: #fff;
+}
+
+h1{font-size: 2.5rem;}
+
+h2{
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 15px;
+}
+
+ul{list-style: none;}
+
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+}
+
+
+/*utilitys class*/
+.container{
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 30px;
+}
+
+.parf-text{
+    font-size: 18px;
+}
+
+.showcase{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.showcase-title{
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.span-text{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.span-text, .text, .span-text1{
+    color: #00ffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*navbar*/
+.navbar{
+    height: 80px;
+    align-items: center;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.navbar .logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 25px;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.nav-link{
+    position: relative;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.nav-link::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #00ffff;
+    transition: width 0.4s ease-out;
+}
+
+.nav-link:hover.nav-link::after{
+    width: 100%;
+}
+
+/* texto de titulo */
+
+
+
+/*redes sociales*/
+.skill-list{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* .circle{
+    border: #00ffff solid 2px;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+} */
+
+
+/* icons twitter */
+.bxl-twitter{
+    font-size: 22px;
+    color: #00ffff;
+    margin-left: 2.5px;
+    margin-top: 2.4px;
+}
+
+.bxl-twitter:hover{
+    color: #FFFFFF;
+    background-color: #00acee;
+    border-radius: 15px;
+}
+
+
+/* icons github */
+.bxl-github{
+    font-size: 22px;
+    color: #00ffff;
+    margin-left: 2.3px;
+    margin-top: 2.5px;
+}
+
+.bxl-github:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+
+/* icons instagram */
+.bxl-instagram{
+    font-size: 24px;
+    color: #00ffff;
+    margin-left: 2px;
+    margin-top: 1.3px;
+}
+
+.bxl-instagram:hover{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* icons linkedin */
+.bxl-linkedin{
+    font-size: 20px;
+    color: #00ffff;
+    margin-left: 3.5px;
+    margin-top: 1px;
+}
+
+.bxl-linkedin:hover{
+    color: #FFFFFF;
+    background-color: #0A66C2;
+    border-radius: 5px;
+    width: 20px;
+}
+
+
+/*boton de cv*/
+.btn{
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.btn-dark{
+    background-color: #00ffff;
+    border: 1px solid #0e0a27;
+    color: #0e0a27;
+    padding: 8px 18px;
+}
+
+.btn-dark:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* especial Box */
+.especial-box{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(./src/boitumelo-phetla-o_tcYADlSt8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*about*/
+.about-box{
+    padding-top: 40px;
+}
+
+
+/*skills*/
+.skill-box{
+    padding-top: 30px;
+}
+
+.skill-list1{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    padding: 20px 5px;
+}
+
+.bxl-html5{
+    color: #f06529;
+}
+
+.bxl-css3{
+    color: #2965f1;
+}
+
+.bxl-javascript{
+    color: #f0db4f;
+}
+
+
+/*projects*/
+.project-box{
+    padding-top: 45px;
+}
+
+.bxl-nodejs{
+    color: #3c873a;
+}
+
+.bxl-git{
+    color: #F1502F;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20;
+}
+
+.flex-box{
+    text-align: center;
+}
+
+img{
+    height: 300px;
+    width: 500px;
+    border: #00ffff solid 3px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    /* position: relative; */
+}
+
+img:hover{
+    
+    border: #00ffff solid 3px;
+    transform: scale(1.03);
+}
+
+
+/*footer*/
+.foot{
+    background-color: #000;
+}
+
+
+/* contact*/
+.contact-box{
+    padding-top: 30px;
+}
+
+.contact-contain{
+    border-top: #fff 1px solid;
+}
+
+
+/* icons setting */
+.bx-link{
+    color: #fff;
+    font-size: 20px;
+}
+
+.bx-envelope{
+    color: #fff;
+    font-size: 20px;
+}
+
+.foot-contain{
+    border-top: rgba(255, 255, 255, 01) 1px solid;
+    text-align: center;
+}
