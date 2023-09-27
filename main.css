@@ -13,6 +13,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     background-color: #0e0a27;
     color: #fff;
+    height: 100vh;
 }
 
 h1{font-size: 2.5rem;}
@@ -345,6 +346,12 @@ img:hover{
 .bx-envelope{
     color: #fff;
     font-size: 20px;
+}
+
+.contact-contain{
+
+    background-color: #00acee;
+    color: #000;
 }
 
 .foot-contain{
